@@ -11,13 +11,11 @@
            <button class="button-option"></button>
            <button class="button-option"></button>
        </div>
-       <button id="restart">Restart</button>
+       <button id="restart" (click)="restartGame()">Restart</button>
    </div>
 
    <div class="popup hide">
        <p id="message">Sample Message</p>
-       <button id="new-game">New Game</button>
+       <button id="new-game" (click)="newGame()">New Game</button>
    </div>
    
-    <!-- Script -->
-    <script src="script.js"></script>

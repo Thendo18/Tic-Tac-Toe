@@ -1,3 +1,4 @@
+(function () {
 let btnRef = document.querySelectorAll(".button-option");
 let popupRef = document.querySelector(".popup");
 let newgameBtn = document.getElementById("new-game");
@@ -17,13 +18,11 @@ let winningPattern = [
 //Player 'X' plays first
 let xTurn = true;
 let count = 0;
-
 //Disable All Buttons
 const disableButtons = () => {
   btnRef.forEach((element) => (element.disabled = true));
   //enable popup
   popupRef.classList.remove("hide");
-};
 
 //Enable all buttons (For New Game and Restart)
 const enableButtons = () => {
@@ -34,7 +33,7 @@ const enableButtons = () => {
   //disable popup
   popupRef.classList.add("hide");
 };
-
+}
 //This function is executed when a player wins
 const winFunction = (letter) => {
   disableButtons();
@@ -104,5 +103,8 @@ btnRef.forEach((element) => {
     winChecker();
   });
 });
+
+
 //Enable Buttons and disable popup on page load
 window.onload = enableButtons;
+})()
