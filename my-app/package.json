@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "https://yourUserName.github.io/yourProjectName/",
+  "homepage": " https://thendo18.github.io/XOXO/",
   "version": "0.0.0",
   "scripts": {
     "predeploy": "npm run build",
